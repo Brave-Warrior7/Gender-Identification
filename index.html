@@ -1,0 +1,62 @@
+ 
+<html>
+    <head>
+      <title>Face recognition project</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+     <link rel="stylesheet" href="style.css">
+
+     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    </head>
+  
+    <body>
+    <div class="container">
+    <h1>Gender Identification</h1>
+    <br>
+    <br>
+    <h3 style="color:pink; text-align: center;;">This website predicts either if you are a girl of a boy. </h3>
+    <br>
+    <div style="color:cyan; text-align: center; ">
+   
+        <h4>Boy</h4>
+        <hr>
+        <h4>Girl</h4>
+     </div>
+     <br>
+    <center>
+     <div id="camera">
+     </div>
+     
+      <br>
+      <br>
+
+     <div id="result">
+     </div>
+    </center>
+     <center>
+      <br>
+      <br>
+      <br>
+      <br>
+         <button id="take_pic" onclick="takepic()" class="btn btn-danger" > Take Picture</button>
+         <br>
+         <br>
+         <button id="identify_pic" onclick="ident_pic()" class="btn btn-warning" > Identify Picture</button>
+         <br>
+         <br>
+         <h3 style="color:pink; text-align: center;;">Person: <span id="person"> </span></h3>
+         <h3 style="color:pink; text-align: center;;">Accuracy:<span id="accuracy"></span></h3>
+     </center>
+    </div>
+  <script src="main.js"></script>
+  
+  
+    </body>
+  </html>
